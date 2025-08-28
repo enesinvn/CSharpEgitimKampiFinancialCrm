@@ -15,7 +15,7 @@ namespace FinancialCrm
         FinancialCrmDbEntities db = new FinancialCrmDbEntities();
         private void FrmBank_Load(object sender, EventArgs e)
         {
-            //Banka Bakiyeleri
+            
             var ZiraatBankBalance = db.Banks.Where(x => x.BankTitle == "Ziraat Bankası").Select(y => y.BankBalance).FirstOrDefault();
             var VakifBankBalance = db.Banks.Where(x => x.BankTitle == "Vakıfbank").Select(y => y.BankBalance).FirstOrDefault();
             var İsBankasiBalance = db.Banks.Where(x => x.BankTitle == "İş Bankası").Select(y => y.BankBalance).FirstOrDefault();
@@ -24,7 +24,7 @@ namespace FinancialCrm
             lblVakifbankBalance.Text = VakifBankBalance.ToString() + " ₺";
             lblİsBankasiBalance.Text = İsBankasiBalance.ToString() + " ₺";
 
-            //Banka Hareketleri
+            
             var bankProcess1 = db.BankProcesses.OrderByDescending(x => x.BankProcessId).Take(1).FirstOrDefault();
             lblBankProcess1.Text = bankProcess1.Description + " " + bankProcess1.Amount + " " + bankProcess1.ProcessDate;
 
