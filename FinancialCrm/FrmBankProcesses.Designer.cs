@@ -79,9 +79,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(30, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(250, 32);
+            this.lblTitle.Size = new System.Drawing.Size(300, 32);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "🔄 Banka İşlem Yönetimi";
+            this.lblTitle.Text = "🔄 Banka İşlem Yönetimi\r\n";
             // 
             // panelLeft
             // 
@@ -108,7 +108,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 70);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(380, 530);
+            this.panelLeft.Size = new System.Drawing.Size(380, 534);
             this.panelLeft.TabIndex = 1;
             // 
             // btnToday
@@ -118,9 +118,9 @@
             this.btnToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToday.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnToday.ForeColor = System.Drawing.Color.White;
-            this.btnToday.Location = new System.Drawing.Point(30, 480);
+            this.btnToday.Location = new System.Drawing.Point(30, 496);
             this.btnToday.Name = "btnToday";
-            this.btnToday.Size = new System.Drawing.Size(320, 35);
+            this.btnToday.Size = new System.Drawing.Size(320, 31);
             this.btnToday.TabIndex = 13;
             this.btnToday.Text = "📅 Bugünkü İşlemler";
             this.btnToday.UseVisualStyleBackColor = false;
@@ -133,9 +133,9 @@
             this.btnFilterByBank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFilterByBank.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnFilterByBank.ForeColor = System.Drawing.Color.White;
-            this.btnFilterByBank.Location = new System.Drawing.Point(30, 440);
+            this.btnFilterByBank.Location = new System.Drawing.Point(30, 456);
             this.btnFilterByBank.Name = "btnFilterByBank";
-            this.btnFilterByBank.Size = new System.Drawing.Size(320, 35);
+            this.btnFilterByBank.Size = new System.Drawing.Size(320, 31);
             this.btnFilterByBank.TabIndex = 12;
             this.btnFilterByBank.Text = "🔍 Bankaya Göre Filtrele";
             this.btnFilterByBank.UseVisualStyleBackColor = false;
@@ -148,9 +148,9 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(30, 380);
+            this.btnDelete.Location = new System.Drawing.Point(30, 396);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(320, 45);
+            this.btnDelete.Size = new System.Drawing.Size(320, 41);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "🗑️ Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -163,9 +163,9 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(30, 325);
+            this.btnUpdate.Location = new System.Drawing.Point(30, 349);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(320, 45);
+            this.btnUpdate.Size = new System.Drawing.Size(320, 41);
             this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "✏️ Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -178,9 +178,9 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(30, 270);
+            this.btnAdd.Location = new System.Drawing.Point(30, 302);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(320, 45);
+            this.btnAdd.Size = new System.Drawing.Size(320, 41);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "➕ Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -193,9 +193,9 @@
             this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnList.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnList.ForeColor = System.Drawing.Color.White;
-            this.btnList.Location = new System.Drawing.Point(30, 215);
+            this.btnList.Location = new System.Drawing.Point(30, 255);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(320, 45);
+            this.btnList.Size = new System.Drawing.Size(320, 41);
             this.btnList.TabIndex = 15;
             this.btnList.Text = "📋 Listele";
             this.btnList.UseVisualStyleBackColor = false;
@@ -206,7 +206,7 @@
             this.cmbBank.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBank.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbBank.FormattingEnabled = true;
-            this.cmbBank.Location = new System.Drawing.Point(30, 185);
+            this.cmbBank.Location = new System.Drawing.Point(30, 224);
             this.cmbBank.Name = "cmbBank";
             this.cmbBank.Size = new System.Drawing.Size(320, 25);
             this.cmbBank.TabIndex = 8;
@@ -216,26 +216,26 @@
             this.cmbProcessType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProcessType.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbProcessType.FormattingEnabled = true;
-            this.cmbProcessType.Location = new System.Drawing.Point(30, 150);
+            this.cmbProcessType.Location = new System.Drawing.Point(30, 178);
             this.cmbProcessType.Name = "cmbProcessType";
             this.cmbProcessType.Size = new System.Drawing.Size(320, 25);
             this.cmbProcessType.TabIndex = 7;
             // 
             // dtpProcessDate
             // 
+            this.dtpProcessDate.CustomFormat = "dd/MM/yyyy HH:mm";
             this.dtpProcessDate.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.dtpProcessDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpProcessDate.CustomFormat = "dd/MM/yyyy HH:mm";
-            this.dtpProcessDate.ShowUpDown = true;
-            this.dtpProcessDate.Location = new System.Drawing.Point(30, 115);
+            this.dtpProcessDate.Location = new System.Drawing.Point(30, 132);
             this.dtpProcessDate.Name = "dtpProcessDate";
+            this.dtpProcessDate.ShowUpDown = true;
             this.dtpProcessDate.Size = new System.Drawing.Size(320, 25);
             this.dtpProcessDate.TabIndex = 6;
             // 
             // txtAmount
             // 
             this.txtAmount.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtAmount.Location = new System.Drawing.Point(200, 80);
+            this.txtAmount.Location = new System.Drawing.Point(200, 86);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(150, 25);
             this.txtAmount.TabIndex = 5;
@@ -244,17 +244,18 @@
             // txtDescription
             // 
             this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtDescription.Location = new System.Drawing.Point(30, 80);
+            this.txtDescription.Location = new System.Drawing.Point(30, 86);
             this.txtDescription.MaxLength = 200;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(160, 25);
             this.txtDescription.TabIndex = 4;
+            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
             // 
             // txtBankProcessId
             // 
             this.txtBankProcessId.Enabled = false;
             this.txtBankProcessId.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtBankProcessId.Location = new System.Drawing.Point(30, 45);
+            this.txtBankProcessId.Location = new System.Drawing.Point(30, 40);
             this.txtBankProcessId.Name = "txtBankProcessId";
             this.txtBankProcessId.ReadOnly = true;
             this.txtBankProcessId.Size = new System.Drawing.Size(320, 25);
@@ -266,9 +267,9 @@
             this.lblBank.AutoSize = true;
             this.lblBank.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblBank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblBank.Location = new System.Drawing.Point(30, 170);
+            this.lblBank.Location = new System.Drawing.Point(30, 206);
             this.lblBank.Name = "lblBank";
-            this.lblBank.Size = new System.Drawing.Size(46, 15);
+            this.lblBank.Size = new System.Drawing.Size(44, 15);
             this.lblBank.TabIndex = 0;
             this.lblBank.Text = "Banka:";
             // 
@@ -277,9 +278,9 @@
             this.lblProcessType.AutoSize = true;
             this.lblProcessType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblProcessType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblProcessType.Location = new System.Drawing.Point(30, 135);
+            this.lblProcessType.Location = new System.Drawing.Point(27, 160);
             this.lblProcessType.Name = "lblProcessType";
-            this.lblProcessType.Size = new System.Drawing.Size(70, 15);
+            this.lblProcessType.Size = new System.Drawing.Size(63, 15);
             this.lblProcessType.TabIndex = 0;
             this.lblProcessType.Text = "İşlem Tipi:";
             // 
@@ -288,9 +289,9 @@
             this.lblProcessDate.AutoSize = true;
             this.lblProcessDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblProcessDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblProcessDate.Location = new System.Drawing.Point(30, 100);
+            this.lblProcessDate.Location = new System.Drawing.Point(30, 114);
             this.lblProcessDate.Name = "lblProcessDate";
-            this.lblProcessDate.Size = new System.Drawing.Size(76, 15);
+            this.lblProcessDate.Size = new System.Drawing.Size(73, 15);
             this.lblProcessDate.TabIndex = 0;
             this.lblProcessDate.Text = "İşlem Tarihi:";
             // 
@@ -299,9 +300,9 @@
             this.lblAmount.AutoSize = true;
             this.lblAmount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblAmount.Location = new System.Drawing.Point(200, 65);
+            this.lblAmount.Location = new System.Drawing.Point(197, 68);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(43, 15);
+            this.lblAmount.Size = new System.Drawing.Size(39, 15);
             this.lblAmount.TabIndex = 0;
             this.lblAmount.Text = "Tutar:";
             // 
@@ -310,9 +311,9 @@
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblDescription.Location = new System.Drawing.Point(30, 65);
+            this.lblDescription.Location = new System.Drawing.Point(30, 68);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(64, 15);
+            this.lblDescription.Size = new System.Drawing.Size(60, 15);
             this.lblDescription.TabIndex = 0;
             this.lblDescription.Text = "Açıklama:";
             // 
@@ -321,9 +322,9 @@
             this.lblBankProcessId.AutoSize = true;
             this.lblBankProcessId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblBankProcessId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblBankProcessId.Location = new System.Drawing.Point(30, 30);
+            this.lblBankProcessId.Location = new System.Drawing.Point(30, 24);
             this.lblBankProcessId.Name = "lblBankProcessId";
-            this.lblBankProcessId.Size = new System.Drawing.Size(63, 15);
+            this.lblBankProcessId.Size = new System.Drawing.Size(56, 15);
             this.lblBankProcessId.TabIndex = 0;
             this.lblBankProcessId.Text = "İşlem ID:";
             // 
@@ -332,9 +333,9 @@
             this.lblFormTitle.AutoSize = true;
             this.lblFormTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblFormTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.lblFormTitle.Location = new System.Drawing.Point(30, 5);
+            this.lblFormTitle.Location = new System.Drawing.Point(35, 3);
             this.lblFormTitle.Name = "lblFormTitle";
-            this.lblFormTitle.Size = new System.Drawing.Size(144, 21);
+            this.lblFormTitle.Size = new System.Drawing.Size(155, 21);
             this.lblFormTitle.TabIndex = 0;
             this.lblFormTitle.Text = "Banka İşlem Formu";
             // 
@@ -350,7 +351,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(820, 530);
+            this.dataGridView1.Size = new System.Drawing.Size(820, 534);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -358,7 +359,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.ClientSize = new System.Drawing.Size(1200, 604);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelHeader);
@@ -375,6 +376,7 @@
             this.panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

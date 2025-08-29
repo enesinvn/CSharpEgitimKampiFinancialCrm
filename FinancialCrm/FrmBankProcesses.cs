@@ -481,5 +481,10 @@ namespace FinancialCrm
                 $"Net: {(totalIn - totalOut):C2}",
                 "Günlük Özet", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

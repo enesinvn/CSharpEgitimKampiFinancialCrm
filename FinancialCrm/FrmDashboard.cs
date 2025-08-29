@@ -91,7 +91,44 @@ namespace FinancialCrm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FrmCategories frm = new FrmCategories();
+            frm.Show();
+            this.Hide();
+        }
 
+        private void btnBanksForm_Click(object sender, EventArgs e)
+        {
+            FrmBanks frm = new FrmBanks();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBills_Click(object sender, EventArgs e)
+        {
+            FrmBilling frm = new FrmBilling();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnSpending_Click(object sender, EventArgs e)
+        {
+            FrmSpendings frm = new FrmSpendings();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBankProcess_Click(object sender, EventArgs e)
+        {
+            FrmBankProcesses frm = new FrmBankProcesses();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            FrmMainMenu frm = new FrmMainMenu();
+            frm.Show();
+            this.Hide();
         }
     }
 }

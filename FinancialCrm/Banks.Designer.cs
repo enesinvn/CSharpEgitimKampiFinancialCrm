@@ -104,7 +104,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(30, 380);
+            this.btnDelete.Location = new System.Drawing.Point(30, 416);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(260, 45);
             this.btnDelete.TabIndex = 7;
@@ -119,7 +119,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(30, 320);
+            this.btnUpdate.Location = new System.Drawing.Point(30, 356);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(260, 45);
             this.btnUpdate.TabIndex = 6;
@@ -134,7 +134,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(30, 260);
+            this.btnAdd.Location = new System.Drawing.Point(30, 296);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(260, 45);
             this.btnAdd.TabIndex = 5;
@@ -149,7 +149,7 @@
             this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnList.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnList.ForeColor = System.Drawing.Color.White;
-            this.btnList.Location = new System.Drawing.Point(30, 200);
+            this.btnList.Location = new System.Drawing.Point(30, 236);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(260, 45);
             this.btnList.TabIndex = 9;
@@ -160,7 +160,7 @@
             // txtBankBalance
             // 
             this.txtBankBalance.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtBankBalance.Location = new System.Drawing.Point(30, 170);
+            this.txtBankBalance.Location = new System.Drawing.Point(30, 201);
             this.txtBankBalance.Name = "txtBankBalance";
             this.txtBankBalance.Size = new System.Drawing.Size(260, 29);
             this.txtBankBalance.TabIndex = 4;
@@ -168,7 +168,7 @@
             // txtBankAccountNumber
             // 
             this.txtBankAccountNumber.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtBankAccountNumber.Location = new System.Drawing.Point(30, 135);
+            this.txtBankAccountNumber.Location = new System.Drawing.Point(30, 147);
             this.txtBankAccountNumber.MaxLength = 50;
             this.txtBankAccountNumber.Name = "txtBankAccountNumber";
             this.txtBankAccountNumber.Size = new System.Drawing.Size(260, 29);
@@ -187,7 +187,7 @@
             // 
             this.txtBankId.Enabled = false;
             this.txtBankId.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtBankId.Location = new System.Drawing.Point(30, 65);
+            this.txtBankId.Location = new System.Drawing.Point(30, 50);
             this.txtBankId.Name = "txtBankId";
             this.txtBankId.ReadOnly = true;
             this.txtBankId.Size = new System.Drawing.Size(260, 29);
@@ -199,7 +199,7 @@
             this.lblBankBalance.AutoSize = true;
             this.lblBankBalance.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblBankBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblBankBalance.Location = new System.Drawing.Point(30, 167);
+            this.lblBankBalance.Location = new System.Drawing.Point(31, 179);
             this.lblBankBalance.Name = "lblBankBalance";
             this.lblBankBalance.Size = new System.Drawing.Size(103, 19);
             this.lblBankBalance.TabIndex = 0;
@@ -210,7 +210,7 @@
             this.lblBankAccountNumber.AutoSize = true;
             this.lblBankAccountNumber.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblBankAccountNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblBankAccountNumber.Location = new System.Drawing.Point(30, 115);
+            this.lblBankAccountNumber.Location = new System.Drawing.Point(30, 125);
             this.lblBankAccountNumber.Name = "lblBankAccountNumber";
             this.lblBankAccountNumber.Size = new System.Drawing.Size(123, 19);
             this.lblBankAccountNumber.TabIndex = 0;
@@ -232,7 +232,7 @@
             this.lblBankId.AutoSize = true;
             this.lblBankId.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblBankId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblBankId.Location = new System.Drawing.Point(30, 45);
+            this.lblBankId.Location = new System.Drawing.Point(30, 28);
             this.lblBankId.Name = "lblBankId";
             this.lblBankId.Size = new System.Drawing.Size(72, 19);
             this.lblBankId.TabIndex = 0;
@@ -243,7 +243,7 @@
             this.lblFormTitle.AutoSize = true;
             this.lblFormTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblFormTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.lblFormTitle.Location = new System.Drawing.Point(30, 15);
+            this.lblFormTitle.Location = new System.Drawing.Point(29, 3);
             this.lblFormTitle.Name = "lblFormTitle";
             this.lblFormTitle.Size = new System.Drawing.Size(146, 25);
             this.lblFormTitle.TabIndex = 0;

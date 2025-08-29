@@ -22,7 +22,9 @@
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.txtSpendingId = new System.Windows.Forms.TextBox();
             this.btnToday = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnFilterByCategory = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -32,12 +34,10 @@
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.txtSpendingAmount = new System.Windows.Forms.TextBox();
             this.txtSpendingTitle = new System.Windows.Forms.TextBox();
-            this.txtSpendingId = new System.Windows.Forms.TextBox();
             this.lblSpendingDate = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
             this.lblSpendingAmount = new System.Windows.Forms.Label();
             this.lblSpendingTitle = new System.Windows.Forms.Label();
-            this.lblSpendingId = new System.Windows.Forms.Label();
             this.lblFormTitle = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelHeader.SuspendLayout();
@@ -78,14 +78,16 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(30, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(217, 32);
+            this.lblTitle.Size = new System.Drawing.Size(264, 32);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "💳 Harcama Yönetimi";
             // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panelLeft.Controls.Add(this.txtSpendingId);
             this.panelLeft.Controls.Add(this.btnToday);
+            this.panelLeft.Controls.Add(this.label1);
             this.panelLeft.Controls.Add(this.btnFilterByCategory);
             this.panelLeft.Controls.Add(this.btnDelete);
             this.panelLeft.Controls.Add(this.btnUpdate);
@@ -95,18 +97,25 @@
             this.panelLeft.Controls.Add(this.cmbCategory);
             this.panelLeft.Controls.Add(this.txtSpendingAmount);
             this.panelLeft.Controls.Add(this.txtSpendingTitle);
-            this.panelLeft.Controls.Add(this.txtSpendingId);
             this.panelLeft.Controls.Add(this.lblSpendingDate);
             this.panelLeft.Controls.Add(this.lblCategory);
             this.panelLeft.Controls.Add(this.lblSpendingAmount);
             this.panelLeft.Controls.Add(this.lblSpendingTitle);
-            this.panelLeft.Controls.Add(this.lblSpendingId);
             this.panelLeft.Controls.Add(this.lblFormTitle);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 70);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(350, 530);
+            this.panelLeft.Size = new System.Drawing.Size(350, 564);
             this.panelLeft.TabIndex = 1;
+            // 
+            // txtSpendingId
+            // 
+            this.txtSpendingId.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtSpendingId.Location = new System.Drawing.Point(34, 52);
+            this.txtSpendingId.MaxLength = 100;
+            this.txtSpendingId.Name = "txtSpendingId";
+            this.txtSpendingId.Size = new System.Drawing.Size(290, 27);
+            this.txtSpendingId.TabIndex = 15;
             // 
             // btnToday
             // 
@@ -115,13 +124,24 @@
             this.btnToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToday.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnToday.ForeColor = System.Drawing.Color.White;
-            this.btnToday.Location = new System.Drawing.Point(30, 480);
+            this.btnToday.Location = new System.Drawing.Point(31, 515);
             this.btnToday.Name = "btnToday";
             this.btnToday.Size = new System.Drawing.Size(290, 35);
             this.btnToday.TabIndex = 11;
             this.btnToday.Text = "📅 Bugünkü Harcamalar";
             this.btnToday.UseVisualStyleBackColor = false;
             this.btnToday.Click += new System.EventHandler(this.btnToday_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.label1.Location = new System.Drawing.Point(34, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 19);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "İşlem ID:";
             // 
             // btnFilterByCategory
             // 
@@ -130,7 +150,7 @@
             this.btnFilterByCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFilterByCategory.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnFilterByCategory.ForeColor = System.Drawing.Color.White;
-            this.btnFilterByCategory.Location = new System.Drawing.Point(30, 440);
+            this.btnFilterByCategory.Location = new System.Drawing.Point(31, 475);
             this.btnFilterByCategory.Name = "btnFilterByCategory";
             this.btnFilterByCategory.Size = new System.Drawing.Size(290, 35);
             this.btnFilterByCategory.TabIndex = 10;
@@ -145,7 +165,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(30, 385);
+            this.btnDelete.Location = new System.Drawing.Point(31, 420);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(290, 45);
             this.btnDelete.TabIndex = 9;
@@ -160,7 +180,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(30, 330);
+            this.btnUpdate.Location = new System.Drawing.Point(31, 369);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(290, 45);
             this.btnUpdate.TabIndex = 8;
@@ -175,7 +195,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(30, 275);
+            this.btnAdd.Location = new System.Drawing.Point(31, 318);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(290, 45);
             this.btnAdd.TabIndex = 7;
@@ -190,7 +210,7 @@
             this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnList.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnList.ForeColor = System.Drawing.Color.White;
-            this.btnList.Location = new System.Drawing.Point(30, 220);
+            this.btnList.Location = new System.Drawing.Point(31, 267);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(290, 45);
             this.btnList.TabIndex = 13;
@@ -202,7 +222,7 @@
             // 
             this.dtpSpendingDate.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dtpSpendingDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpSpendingDate.Location = new System.Drawing.Point(30, 190);
+            this.dtpSpendingDate.Location = new System.Drawing.Point(31, 234);
             this.dtpSpendingDate.Name = "dtpSpendingDate";
             this.dtpSpendingDate.Size = new System.Drawing.Size(290, 27);
             this.dtpSpendingDate.TabIndex = 6;
@@ -212,7 +232,7 @@
             this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategory.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(30, 155);
+            this.cmbCategory.Location = new System.Drawing.Point(31, 190);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(290, 28);
             this.cmbCategory.TabIndex = 5;
@@ -220,7 +240,7 @@
             // txtSpendingAmount
             // 
             this.txtSpendingAmount.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtSpendingAmount.Location = new System.Drawing.Point(30, 120);
+            this.txtSpendingAmount.Location = new System.Drawing.Point(33, 143);
             this.txtSpendingAmount.Name = "txtSpendingAmount";
             this.txtSpendingAmount.Size = new System.Drawing.Size(290, 27);
             this.txtSpendingAmount.TabIndex = 4;
@@ -229,31 +249,20 @@
             // txtSpendingTitle
             // 
             this.txtSpendingTitle.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtSpendingTitle.Location = new System.Drawing.Point(30, 85);
+            this.txtSpendingTitle.Location = new System.Drawing.Point(33, 94);
             this.txtSpendingTitle.MaxLength = 100;
             this.txtSpendingTitle.Name = "txtSpendingTitle";
             this.txtSpendingTitle.Size = new System.Drawing.Size(290, 27);
             this.txtSpendingTitle.TabIndex = 3;
-            // 
-            // txtSpendingId
-            // 
-            this.txtSpendingId.Enabled = false;
-            this.txtSpendingId.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtSpendingId.Location = new System.Drawing.Point(30, 50);
-            this.txtSpendingId.Name = "txtSpendingId";
-            this.txtSpendingId.ReadOnly = true;
-            this.txtSpendingId.Size = new System.Drawing.Size(290, 27);
-            this.txtSpendingId.TabIndex = 1;
-            this.txtSpendingId.TabStop = false;
             // 
             // lblSpendingDate
             // 
             this.lblSpendingDate.AutoSize = true;
             this.lblSpendingDate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblSpendingDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblSpendingDate.Location = new System.Drawing.Point(30, 170);
+            this.lblSpendingDate.Location = new System.Drawing.Point(31, 212);
             this.lblSpendingDate.Name = "lblSpendingDate";
-            this.lblSpendingDate.Size = new System.Drawing.Size(45, 19);
+            this.lblSpendingDate.Size = new System.Drawing.Size(46, 19);
             this.lblSpendingDate.TabIndex = 0;
             this.lblSpendingDate.Text = "Tarih:";
             // 
@@ -262,9 +271,9 @@
             this.lblCategory.AutoSize = true;
             this.lblCategory.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblCategory.Location = new System.Drawing.Point(30, 135);
+            this.lblCategory.Location = new System.Drawing.Point(31, 170);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(70, 19);
+            this.lblCategory.Size = new System.Drawing.Size(71, 19);
             this.lblCategory.TabIndex = 0;
             this.lblCategory.Text = "Kategori:";
             // 
@@ -273,9 +282,9 @@
             this.lblSpendingAmount.AutoSize = true;
             this.lblSpendingAmount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblSpendingAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblSpendingAmount.Location = new System.Drawing.Point(30, 100);
+            this.lblSpendingAmount.Location = new System.Drawing.Point(33, 122);
             this.lblSpendingAmount.Name = "lblSpendingAmount";
-            this.lblSpendingAmount.Size = new System.Drawing.Size(49, 19);
+            this.lblSpendingAmount.Size = new System.Drawing.Size(48, 19);
             this.lblSpendingAmount.TabIndex = 0;
             this.lblSpendingAmount.Text = "Tutar:";
             // 
@@ -284,22 +293,11 @@
             this.lblSpendingTitle.AutoSize = true;
             this.lblSpendingTitle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblSpendingTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblSpendingTitle.Location = new System.Drawing.Point(30, 65);
+            this.lblSpendingTitle.Location = new System.Drawing.Point(31, 73);
             this.lblSpendingTitle.Name = "lblSpendingTitle";
             this.lblSpendingTitle.Size = new System.Drawing.Size(122, 19);
             this.lblSpendingTitle.TabIndex = 0;
             this.lblSpendingTitle.Text = "Harcama Başlığı:";
-            // 
-            // lblSpendingId
-            // 
-            this.lblSpendingId.AutoSize = true;
-            this.lblSpendingId.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblSpendingId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.lblSpendingId.Location = new System.Drawing.Point(30, 30);
-            this.lblSpendingId.Name = "lblSpendingId";
-            this.lblSpendingId.Size = new System.Drawing.Size(95, 19);
-            this.lblSpendingId.TabIndex = 0;
-            this.lblSpendingId.Text = "Harcama ID:";
             // 
             // lblFormTitle
             // 
@@ -308,7 +306,7 @@
             this.lblFormTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.lblFormTitle.Location = new System.Drawing.Point(30, 5);
             this.lblFormTitle.Name = "lblFormTitle";
-            this.lblFormTitle.Size = new System.Drawing.Size(153, 25);
+            this.lblFormTitle.Size = new System.Drawing.Size(170, 25);
             this.lblFormTitle.TabIndex = 0;
             this.lblFormTitle.Text = "Harcama İşlemleri";
             // 
@@ -323,8 +321,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(350, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(850, 530);
+            this.dataGridView1.Size = new System.Drawing.Size(850, 564);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -332,7 +331,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.ClientSize = new System.Drawing.Size(1200, 634);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelHeader);
@@ -349,6 +348,7 @@
             this.panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -367,13 +367,13 @@
         private System.Windows.Forms.ComboBox cmbCategory;
         private System.Windows.Forms.TextBox txtSpendingAmount;
         private System.Windows.Forms.TextBox txtSpendingTitle;
-        private System.Windows.Forms.TextBox txtSpendingId;
         private System.Windows.Forms.Label lblSpendingDate;
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Label lblSpendingAmount;
         private System.Windows.Forms.Label lblSpendingTitle;
-        private System.Windows.Forms.Label lblSpendingId;
         private System.Windows.Forms.Label lblFormTitle;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtSpendingId;
+        private System.Windows.Forms.Label label1;
     }
 }
