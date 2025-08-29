@@ -169,7 +169,7 @@ FinancialCrm/
 
 **Enes İnan**
 - GitHub: [@enesinvn](https://github.com/enesinvn)
-- Email: [email@example.com](e.invn17@gmail.com)
+- Email: [e.invn17@gmail.com](e.invn17@gmail.com)
 
 ## 🙏 Teşekkürler
 
